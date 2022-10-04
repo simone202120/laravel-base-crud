@@ -27,7 +27,7 @@
       <td>{{$fumetto->price}}</td>
       <td>{{$fumetto->series}}</td>
       <td>{{$fumetto->type}}</td>
-      <td><a href="{{route('comics.show', ['fumetto' => $fumetto->id])}}"><button type="button" class="btn btn-success">Visualizza dettagli</button></td>
+      <td><a href="{{route('comics.show', ['comic' => $fumetto->id])}}"><button type="button" class="btn btn-success">Visualizza dettagli</button></td>
     </tr>
   @endforeach
     

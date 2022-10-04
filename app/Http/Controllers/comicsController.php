@@ -37,7 +37,13 @@ class comicsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $nuovoFumetto= new comic();
+        $nuovoFumetto ->fill($data);
+        $nuovoFumetto->save();
+
+        return view('creaFumetto');
     }
 
     /**
@@ -49,7 +55,7 @@ class comicsController extends Controller
     public function show($id)
     {
         $fumetto = comic::find($id);
-        return view('comics.show', ['fumetto'=>$fumetto]);
+        return view('show', ['fumetto'=>$fumetto]);
     }
 
     /**
