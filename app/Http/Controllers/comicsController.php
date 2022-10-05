@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\comic;
 use Illuminate\Http\Request;
 
-class comicsController extends Controller
+class ComicsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -45,7 +45,7 @@ class comicsController extends Controller
                 'price'=>'required|numeric',
                 'series'=>'required|max:100',
                 'sale_date'=>'required|date_format:Y-m-d',
-                'type'=>'required|max:10',
+                'type'=>'required|max:20',
             ]
         );
 
