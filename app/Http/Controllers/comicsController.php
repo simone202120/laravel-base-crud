@@ -44,7 +44,7 @@ class comicsController extends Controller
                 'thumb'=>'required|URL',
                 'price'=>'required|numeric',
                 'series'=>'required|max:100',
-                'date'=>'required|date_format:D/M/Y',
+                'sale_date'=>'required|date_format:Y-m-d',
                 'type'=>'required|max:10',
             ]
         );
@@ -99,7 +99,7 @@ class comicsController extends Controller
                 'thumb'=>'required|URL',
                 'price'=>'required|numeric',
                 'series'=>'required|max:100',
-                'date'=>'required|date',
+                'sale_date'=>'required|date_format:Y-m-d',
                 'type'=>'required|max:10',
             ]
         );
