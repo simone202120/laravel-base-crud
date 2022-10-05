@@ -17,7 +17,7 @@
     </div>
     <div class="mb-3">
         <label for="thumb" class="form-label">url immagine</label>
-        <input type="string" class="form-control" id="exampleInputPassword1" name="string">
+        <input type="string" class="form-control" id="exampleInputPassword1" name="thumb">
     </div>
     <div class="mb-3">
         <label for="price" class="form-label">prezzo</label>
